@@ -1,11 +1,7 @@
-let temperature = 10;
+let num = 100;
 
-if (temperature < 0) {
-  console.log("매우 추움");
-} else if (temperature >= 0 && temperature < 10) {
-  console.log("추움");
-} else if (temperature >= 10 && temperature < 20) {
-  console.log("적당");
-} else if (temperature >= 20) {
-  console.log("더움");
+for (let idx = 1; idx <= num; idx++) {
+  if (num % idx === 0) {
+    console.log(idx);
+  }
 }
