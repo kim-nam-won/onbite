@@ -19,9 +19,12 @@ function funcA(p1, p2, p3) {
 
 // 2. rest 매개변수
 // -> rest: 나머지 , 나머지 매개변수
-
+// -> rest 매개변수 뒤에는 다른 매개변수가 올 수 없다. 나머지 모두 받아서 배열로 만든다.
+// rest 이름 대신 다른 이름을 사용할 수 있다.
+// rest 매개변수는 함수의 마지막에 위치해야 한다. (맨 마지막에 위치해야 한다.)
 function funcB(one, ...rest) {
-  console.log(rest, one);
+  // one은 첫번째 값(만 다른 이름의 변수로 받고싶을때), 나머지 값들은 rest에 들어간다.
+  console.log(one, rest); // rest는 배열로 들어간다.
 }
 
 funcB(...arr1);
